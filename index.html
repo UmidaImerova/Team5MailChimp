@@ -82,7 +82,80 @@ body {
     width: 40px;
     height: 40px;
 }
+     
         
+        /*  MORE ANIMALS THAT NEED YOUR HELP */
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows:250px;
+    justify-content: space-between;
+
+}
+.card{
+    margin : 0 5px;
+    box-sizing: border-box;
+    border: 2px solid rgb(8, 8, 8);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.card1{
+    background-image:url(https://a-z-animals.com/media/African-Penguins-header-400x300.jpg) ;
+}
+.card2{
+   background-image: url(https://imageresizer.static9.net.au/j218tl9DOpaDLwIab1-vppr9WKo=/750x0/https%3A%2F%2Fvms-network-images-prod.s3-ap-southeast-2.amazonaws.com%2F2021%2F07%2F372542%2Fmain-sequence.00_12_51_13.still092.jpg);
+
+}
+.card3{
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonvynB8YsrUv4BGuOBolpZbZoJngE-iqf8g&usqp=CAU);
+
+}
+.card4{
+   background-image: url(https://a-z-animals.com/media/Asiatic-black-bear-400x300.jpg);
+
+}
+.text{
+    position: absolute;
+    top:200px;
+   background-color: black;
+   font-size: 18px;
+   color: white;
+   text-transform: uppercase;
+
+}
+h2{
+    text-align: center;
+}
+@media (max-width:768px) {
+.container{
+    display: grid;
+    grid-template-columns: 350px 350px ;
+    grid-template-rows: 200px 200px;
+    justify-content: center;
+
+}
+.text{
+    position: absolute;
+    top:150px;
+    color: white;
+    font-size: 1.2em;
+}
+
+}
+@media (max-width:600px){
+    .container{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 150px 150px 150px 150px;
+    }
+    .text{
+        position: absolute;
+        top: 110px;
+        font-size: 1em;
+    }
+}
 /* statistics */
         
         .wrapper{
@@ -444,6 +517,17 @@ body {
    </div>
     </section>
 
+<!-- MORE ANIMALS THAT NEED YOUR HELP -->
+    <section class="animals">
+        <h2>MORE ANIMALS THAT NEED YOUR HELP...</h2>
+        <div class="container">
+        <div  class="card card1"><p class="text">African Penguin</p>
+             </div>
+        <div class="card card2"><p class="text">Killer Whale</p> </div>
+        <div class="card card3"><p class="text">ORCA</p> </div>
+        <div class="card card4"><p class="text">Asiatic Black Bear</p> </div>
+    </div>
+    </section>
  
      <!-- Footer -->
     <footer>
