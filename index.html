@@ -11,7 +11,159 @@
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&amp;display=swap" rel="stylesheet">
     <style>
+      /*header */
+        body{
+margin: 0;
+padding: 0;
+font-family: 'Lato',sans-serif;
+height: 100%;
+background-color: #f6f9fc;
+font-weight: 400;
+line-height: 1.5;
+}
+.main-container{
+    max-width:800px;
+    margin:0 auto;
+    
+    
+}
+header{
+    height:300px;
+    background-color: #0a0a0a;
+    width: 800px;
+    color:white;
+    
+    }
+    .logo {
+
+        display: block;
+        height: 10rem;
+        text-align: center;
+        margin: 20px auto;
+        background-size: contain;
+        background-image: url("https://mediacentre.britishairways.com/contents/archives/216/86/images/thumb825x560_width/britishairways_21686174576510_thumb.png");
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    .social{
+        margin:0 5px 10px 5px;
+        width:50px;
+        height:50px;
+}
+.social img{
+    width:40px;
+    height:40px;
+}
+    .social-buttons{
+        width:220px;
         
+    }
+    a{
+        text-decoration:none;
+        color:white;
+        
+    }
+    .grass{
+        background-color:green;
+    }
+    .sky{
+        background-color:rgb(96, 96, 245)
+    }
+    .mustard{
+        background-color: rgb(252, 178, 41);
+    }
+    .lilac{
+        background-color: rgb(114, 28, 111);
+    }
+    .button{
+    padding:8px 13px;
+    border-radius: 5px;
+    font-weight: 600;
+    }
+
+    .column{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin: 35px 0 0 100px ;
+    }
+    
+     .currency-trigger{
+        
+        border-radius: 4px;
+        color: #fefefe;
+        border: 1px solid #fefefe;
+        background-color: transparent;
+        width: auto;
+        padding:5px 10px;
+        text-align:center;
+        font-weight: 800;
+        margin: 5px;
+
+    }
+    
+     
+     
+   .header-right-button{
+        display:block;
+        width:50%;
+    }
+    
+    
+    
+    .img-slider{
+        background-image:url("https://www.bornfree.org.uk/storage/images/medium/9ce9b862-553c-4515-8d6e-d8128f66ab4e.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:300px;
+        width:800px;
+        position:absolute;
+        overflow: hidden;
+        padding:2rem 0;
+        
+    
+        }
+        .img-slider{
+            color:#fefefe;
+            font-weight:bolder;
+            font-size:xx-large;
+            
+        }
+    
+    h2,h1{
+    text-align:center;
+    font-size:50px;
+    font-weight:bold;
+    color:white;
+    }
+       
+        @media screen and (max-width:400px){
+           .logo{
+               width:70%;
+               background-size:70%;
+               margin-bottom: 0;
+           }
+           .header-right-button{
+               width:70%;
+               margin:10px;
+           }
+           .social-buttons{
+               width:70%;
+               text-align: center;
+               margin-bottom: 10px;
+
+           }
+           .column{
+               display:block;
+               margin-top:0;
+           }
+           .currency-select{
+               margin-bottom: 20px;
+           }
+           
+       }
+       
+  
         
     /* Footer */
 
@@ -169,9 +321,54 @@ body {
     </style>
 </head>
 <body>
-    <header>
+  
+        <center class="main-container">
+        <header>
+            <div class="logo">
+                
+            </div>
+            <div class="column">
+                
+                    <div class="social-buttons">
+                    <a href="#" class="social"> <img
+                        src="https://cdn-icons-png.flaticon.com/512/174/174855.png"alt="instagram"></a>
 
-    </header>
+
+                    <a href="#" class="social"><img
+                        src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="twitter"></a>
+
+                    <a href="#" class="social"><img
+                        src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                        alt="facebook"></a>
+
+                    <a href="#" class="social"><img
+                        src="https://cdn-icons.flaticon.com/png/512/1377/premium/1377257.png?token=exp=1639696588~hmac=c255e3c3499aa96072aa912842ea53b3" alt="pinterest"></a>
+                         </div>
+                    
+                    <div class="currency-select">
+                        <span class="currency-trigger">£ GBP</span>
+                    </div>
+                    
+                    <div class="header-right-button">
+                        <nav>
+                            <a href="#" class="grass button">DONATE</a>
+                            <a href="#"class="sky button">ADOPT</a>
+                            <a href="#" class="mustard button">SHOP</a>
+                            <a href="#" class="lilac button">SUBSCRIBE</a>
+                      </nav>
+                    </div>
+                    </div>
+
+                 </header>
+            <div class="img-wrapper">
+        <div class="img-slider">
+            <h1>ADOPT TODAY</h1>
+            <h2>JUST £3 PER MONTH</h2>
+                </div>
+
+    </div>
+    </center>
+   
     <section class="welcome" >
         <div style="display: flex; justify-content: space-around;" >
             <div class="left" style="width: 50%; line-height: 1.5; font-size: 18px;">
